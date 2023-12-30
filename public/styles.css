@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000114;
+  font-family: 'Chakra Petch';
+}
+
+#game-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+#gameCanvas {
+  background-color: #00011c; 
+  display: block;
+  margin: 20px auto 0;
+  border: 1px solid white; /* Subtle border */
+}
+
+.button-disabled {
+  background-color: #cccccc; /* Grey out the button */
+  cursor: not-allowed; /* Change cursor to indicate the button is not clickable */
+}
+
+#high-scores-container {
+  position: absolute;
+  width: 200px; 
+  padding: 10px;
+  margin-right: -1150px;
+  margin-top: -200px;
+  background: #eee; /* Light grey background */
+  border-radius: 5px;
+  border: 1px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+#high-scores-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+#game-container-wrapper {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#button-container {
+  width: 102.5%;
+  position: absolute;
+  top: -40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#clearScoresButton{
+  font-size: 18px;
+}
+
+.button-left {
+  margin-left: 10px;
+}
+
+.button-right {
+  margin-right: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #00897b; /* Primary Color */
+  color: white;
+  font-family: 'Chakra Petch';
+}
+
+#score-display {
+  position: absolute;
+  top: -40px; /* Position above the canvas */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: white; /* Dark gray for better visibility */
+}
+
+.game-over-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #008b9b; /* Slightly darker for hover effect */
+}
+
+#instructions {
+  width: 400px; /* Adjust as needed */
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f8f8f8;
+  position: absolute;
+  margin-left: -1350px;
+  margin-top: -100px;
+}
+
+#instructions h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 34px;
+  text-align: center;
+}
+
+#instructions p {
+  color: #666;
+  font-size: 22px;
+}

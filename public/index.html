@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap'); </style>
+</head>
+
+<body>
+    <div id="game-container-wrapper">
+        <div id="button-container">
+            <div>
+                <button id="startButton" class="button-left">Start</button>
+                <button id="pauseButton" class="button-left">Pause</button>
+            </div>
+            <div>
+                <button id="restartButton" class="button-right">Restart</button>
+            </div>
+        </div>
+        <div id="score-display">Score: 0</div>
+        <canvas id="gameCanvas" width="800" height="800"></canvas>
+        <div id="instructions">
+            <h3>Game Instructions</h3>
+            <p><strong>Controls:</strong> Use arrow keys or WASD to move the snake.</p>
+            <p><strong>Eat Apples:</strong> Increase score and length.</p>
+            <p><strong>Golden Apple:</strong> Gives 3 points and 3 length.</p>
+            <p><strong>Reverse Power-Down:</strong> Reverses controls for 1.5 seconds.</p>
+            <p><strong>Avoid Obstacles:</strong> Hitting walls or obstacles ends the game.</p>
+            <p><strong>Score:</strong> Try to get the highest score!</p>
+        </div>
+    </div>
+    <div id="high-scores-container">
+        <h2>High Scores</h2>
+        <ul id="high-scores-list"></ul>
+        <button id="clearScoresButton">Clear Scores</button>
+    </div>
+    <script src="snake.js"></script>
+</body>
+
+</html>
